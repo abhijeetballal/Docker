@@ -1,0 +1,24 @@
+Basic Docker Commands
+Start a containers
+$ docker run
+List active containers
+$ docker ps
+List all containers
+$ docker ps -a 
+To stop a running container
+$ docker stop "container name/id"
+Remove container
+$ docker rm "container name"
+To see list of available images
+$ docker images
+To remove images that is not in use
+$ docker rmi "image name"
+To download an image
+$ docker run "image name"
+$ docker pull "image name"
+To sleep the container
+$ docker run ubuntu sleep 20
+To check the contents of container that is in sleep mode
+$ docker exec distracted_mcclintock cat /etc/hosts
+To run the container in detach mode - it will run in background
+$ docker run -d "container name"
