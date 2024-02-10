@@ -22,3 +22,7 @@ To check the contents of container that is in sleep mode
 $ docker exec distracted_mcclintock cat /etc/hosts
 To run the container in detach mode - it will run in background
 $ docker run -d "container name"
+To stop all the containers at once, run the command
+$ docker stop $(docker ps -aq)
+To remove all the stopped containers at once, run the command
+$ docker rm $(docker ps -aq)
