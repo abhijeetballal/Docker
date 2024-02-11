@@ -1,0 +1,3 @@
+Advanced Docker Run Features
+To update the latest version or the version we want use below command
+$ docker run ubuntu:24.04 cat /etc/*release*
