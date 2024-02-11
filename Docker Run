@@ -1,3 +1,7 @@
 Advanced Docker Run Features
 To update the latest version or the version we want use below command
 $ docker run ubuntu:24.04 cat /etc/*release*
+Local where Docker is installed is called Docker Host or Docker Engine.
+Every Docker container gets an ip address assign by default.
+
+
