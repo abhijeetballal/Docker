@@ -4,4 +4,7 @@ $ docker run ubuntu:24.04 cat /etc/*release*
 Local where Docker is installed is called Docker Host or Docker Engine.
 Every Docker container gets an ip address assign by default.
 Check the Run - PORT Mapping Screenshot.
-
+If you want to check additional information of Docker container apply below command - it will show in json formate
+$ docker inspect "container name/id"
+To check the logs of the container running in background
+$ docker logs "container name/id"
