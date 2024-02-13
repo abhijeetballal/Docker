@@ -8,3 +8,10 @@ If you want to check additional information of Docker container apply below comm
 $ docker inspect "container name/id"
 To check the logs of the container running in background
 $ docker logs "container name/id"
+To run the container/image in background - use below command
+$ docker run -d "container/image name"
+To sleep the container or image.
+$ docker run ubuntu sleep 1500
+There are 2 ways to access the container one is from using internal ip from local host and second is the from external ip.
+To check internal ip assigned to container - use below command
+$ docker inspect "container id"
