@@ -15,3 +15,5 @@ $ docker run ubuntu sleep 1500
 There are 2 ways to access the container one is from using internal ip from local host and second is the from external ip.
 To check internal ip assigned to container - use below command
 $ docker inspect "container id"
+Local host Ip address
+$ 127.0.0.1:8080
