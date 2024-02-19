@@ -1,0 +1,7 @@
+OS - Ubuntu
+Update apt repo
+Install dependencies using apt
+Install python dependencies using pip
+Copy source code to /opt folder
+Run the web server using "Flask" command
+
