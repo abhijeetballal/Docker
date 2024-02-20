@@ -1,0 +1,45 @@
+mkdir voting-application
+cd voting-application/
+git clone https://github.com/dockersamples/example-voting-app.git
+cd example-voting-app/
+ls -lrt
+cd vote/
+ls -lrt
+cat Dockerfile
+ls -lrt
+docker images
+docker build . -t voting-app
+docker images
+docker run -p 5000:80 voting-app
+docker run --name=redis redis
+docker rm redis
+docker run -d --name=redis redis
+docker ps
+docker run -p 5000:80 --link redis:redis voting-app
+docker run --name=db postgres:9.4
+docker rm db
+docker run -d --name=db postgres:9.4
+docker ps
+docker ps -a
+docker run -d voting-app
+docker run -d 3c8afa51ba96
+docker run -d postgres:9.4
+docker ps
+docker run -d db
+docker ps
+clear
+ls
+cd ..
+ls -lrt
+cd worker/
+ls =lrt
+ls -lrt
+docker build . -t worker-app
+clear
+cd ..
+docker images
+docker run --link redis:redis --link db:db worker-app
+docker ps
+docker run -d worker-app
+docker ps
+docker run --link redis:redis --link db:db worker-app
